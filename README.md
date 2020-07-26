@@ -13,8 +13,9 @@
 只能直接打开pdf使用，如果文件夹中有其他图片，将忽略pdf。axpdf.ini中可以设置从pdf转换成bmp的大小，现时为200DPI，可以使用PASS0、PASS1…指定密码，会逐个测试）
 ### psd：iftpsd.spi 1.4
 只支持旧版Photoshop文件，实测Photoshop CC 2018使用最大兼容保存的psd可以打开
-### webp：ifwebp.spi 1.6
-### 其他：iftwic.spi 1.8
+### webp：iftwebp.spi 1.9
+使用libwebp 1.0.1。实测比用windows解码器要快不少
+### 其他：iftwic.spi 1.9
 需要到插件设置中勾选全部格式，利用系统的WindowsCodecs.dll来解码图像，Windows10 1803下支持以下格式  
 bmp、dib、rle  
 gif  
